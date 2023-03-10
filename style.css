@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Open+Sans:wght@300&display=swap');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Open Sans', san-serif;
+  font-weight: 300;
+  color: #fff;
+
+  /* The image used */
+  background-image: url("img/Background.jpg");
+  background-color: #161d35;
+
+  /* Center and scale the image nicely */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.shadowed {
+	filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+	filter: url(#drop-shadow);
+	-webkit-filter: drop-shadow(3px 10px 10px rgba(0,0,0,0.3));
+	filter: drop-shadow(3px 10px 10px rgba(0,0,0,0.3));
+}
+
+/* --- Debug ---*/
+/* div {    
+  border: 1px dotted yellow
+} */
+
+/*--- Nav Bar ---*/
+.navbar {
+  padding: .8rem;
+}
+
+.navbar-brand img {
+  height: 60px;
+}
+
+.nav-link {
+  font-size: 14pt;
+}
+
+/*--- Main ---*/
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/*--- Main Inner ---*/
+.main-inner {
+  flex: 0 2 840px;
+  align-self: stretch;
+  padding: 30px;
+  width: 1080px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch;
+  text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*--- Titles ---*/
+.title h1 {
+  align-self: left;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 64pt;
+  letter-spacing: 0.10ch;
+}
+
+.title h1 sup {
+  font-weight: 400;
+  font-size: 42pt;
+  letter-spacing: 0.10ch;
+}
+
+.subtitle h2 {
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 24pt;
+  letter-spacing: 0.10ch;
+}
+
+.bitcoin {
+  color: #f7931a;
+}
+
+/* Timeline */
+.timeline {
+  margin: 30px auto;
+  padding: 20px;
+}
+
+/* Outer Layer with the timeline border */
+.entries {
+  border-left: 3px solid #fff;
+}
+
+/* Entries */
+.entry a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  margin: 0 0 20px 20px;
+  padding: 10px;
+  color:#fff;
+  background-color: transparent;
+
+  /*--- Hover Effect for buttons ---*/
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+          transition-property: transform;
+}
+
+.entry a:hover,
+.entry a:active {
+  text-decoration: none;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.entry-static {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  margin: 0 0 20px 20px;
+  padding: 10px;
+  color:#888;
+  background-color: transparent;
+}
+
+/* Information about the timeline */
+.entry-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 80px 0 10px;
+}
+
+/* Title of the entry */
+.entry-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 20pt;
+  position: relative;
+}
+
+/* Timeline dot */
+.entry-title::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border-radius: 999px;
+  top: 15px;
+  left: -48px;
+  border: 3px solid #fff;
+}
+
+.entry-icon img {
+  width: 80px;
+  height: 80px;
+}
+
+/*--- Footer Text ---*/
+.footer-div {
+  margin-left:20px;
+}
+
+.footer-text {
+  color: #aaa;
+}
+
+/*--- Media Query ---*/
+@media only screen and (max-width: 840px) {
+  html, body {
+    background-image: url("img/Background-Tall.jpg");
+    background-attachment: unset;
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .entry-title {
+    font-size:18pt;
+  }
+}
