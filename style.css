@@ -110,6 +110,7 @@ html, body {
   padding: 10px;
   color:#fff;
   background-color: transparent;
+  text-decoration: none;
 
   /*--- Hover Effect for buttons ---*/
   -webkit-transform: translateZ(0);
@@ -125,7 +126,7 @@ html, body {
 
 .entry a:hover,
 .entry a:active {
-  text-decoration: none;
+  
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -195,6 +196,31 @@ html, body {
 
 @media only screen and (max-width: 640px) {
   .entry-title {
-    font-size:18pt;
+    font-size: 18pt;
   }
+  .entry-text {
+    margin-right: 50px;
+  }
+  .entry-title {
+    font-size: 16pt;
+  }
+  .entry-body p {
+    font-size: 12pt;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .subtitle h2 {
+    font-size: 20pt;
+  }
+  .entry-text {
+    margin-right: 20px;
+  }
+  .entry-title {
+    font-size: 12pt;
+  }
+  .entry-body p {
+    font-size: 10pt;
+  }
+  
 }
