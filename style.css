@@ -8,7 +8,7 @@ html, body {
   color: #fff;
 
   /* The image used */
-  background-image: url("img/Background.jpg");
+  background-image: url("img/Background.webp");
   background-color: #161d35;
 
   /* Center and scale the image nicely */
@@ -189,7 +189,7 @@ html, body {
 /*--- Media Query ---*/
 @media only screen and (max-width: 840px) {
   html, body {
-    background-image: url("img/Background-Tall.jpg");
+    background-image: url("img/Background-Tall.webp");
     background-attachment: unset;
     background-size: cover;
   }
