@@ -183,6 +183,7 @@ html, body {
 
 .footer-text {
   color: #aaa;
+  text-decoration: none;
 }
 
 /*--- Media Query ---*/
