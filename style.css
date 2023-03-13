@@ -98,6 +98,14 @@ html, body {
   letter-spacing: 0.10ch;
 }
 
+.section-title h3 {
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 18pt;
+  letter-spacing: 0.08ch;
+}
+
 .bitcoin {
   color: #f7931a;
 }
@@ -235,6 +243,9 @@ html, body {
 @media only screen and (max-width: 480px) {
   .subtitle h2 {
     font-size: 20pt;
+  }
+  .section-title h3 {
+    font-size: 15pt;
   }
   .entry-text {
     margin-right: 20px;
