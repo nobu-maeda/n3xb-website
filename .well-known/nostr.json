@@ -1,0 +1,21 @@
+{
+  "names": {
+    "nobu": "72bceb913a3e9e612c740816d99d24759d23ab2ccef0cb2f1ac6e8dff9840a2c"
+  },
+  "relays": {
+    "72bceb913a3e9e612c740816d99d24759d23ab2ccef0cb2f1ac6e8dff9840a2c": [
+      "wss://relay.damus.io",
+      "wss://relay.nostrich.de",
+      "wss://nostr.vulpem.com",
+      "wss://relay.stoner.com",
+      "wss://nostr.mouton.dev",
+      "wss://nostr.azte.co",
+      "wss://nostr-relay.bitcoin.ninja",
+      "wss://nostr.bitcoiner.social",
+      "wss://relay.snort.social",
+      "wss://nos.lol",
+      "wss://nostr-verified.wellorder.net",
+      "wss://relay.nostr.vision"
+    ]
+  }
+}
