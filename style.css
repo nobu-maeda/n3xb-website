@@ -90,7 +90,21 @@ html, body {
   letter-spacing: 0.10ch;
 }
 
-.subtitle h2 {
+.title h2 {
+  align-self: left;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 48pt;
+  letter-spacing: 0.08ch;
+}
+
+.title h2 sup {
+  font-weight: 400;
+  font-size: 32pt;
+  letter-spacing: 0.10ch;
+}
+
+.subtitle h3 {
   text-align: left;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -98,7 +112,7 @@ html, body {
   letter-spacing: 0.10ch;
 }
 
-.section-title h3 {
+.section-title h4 {
   text-align: left;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
@@ -106,19 +120,34 @@ html, body {
   letter-spacing: 0.08ch;
 }
 
+.subtitle h5 {
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16pt;
+  letter-spacing: 0.08ch;
+}
+
 .bitcoin {
   color: #f7931a;
+}
+
+/* Youtube */
+.video-overview {
+  position: relative;
+  margin: auto;
+  margin-top: 38px;
+}
+
+.video-overview iframe {
+  width: 840px;
+  height: 472px;
 }
 
 /* Timeline */
 .timeline {
   margin: 30px auto;
   padding: 20px;
-}
-
-/* Outer Layer with the timeline border */
-.entries {
-  border-left: 3px solid #fff;
 }
 
 /* Entries */
@@ -179,19 +208,6 @@ html, body {
   position: relative;
 }
 
-/* Timeline dot */
-.entry-title::before {
-  content: "";
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  background: #fff;
-  border-radius: 999px;
-  top: 15px;
-  left: -48px;
-  border: 3px solid #fff;
-}
-
 .entry-icon img {
   width: 80px;
   height: 80px;
@@ -223,6 +239,10 @@ html, body {
     background-attachment: unset;
     background-size: cover;
   }
+  .video-overview iframe {
+    width: 840px;
+    height: 472px;
+  }
 }
 
 @media only screen and (max-width: 640px) {
@@ -237,6 +257,10 @@ html, body {
   }
   .entry-body p {
     font-size: 12pt;
+  }
+  .video-overview iframe {
+    width: 640px;
+    height: 360px;
   }
 }
 
@@ -255,6 +279,10 @@ html, body {
   }
   .entry-body p {
     font-size: 10pt;
+  }
+  .video-overview iframe {
+    width: 480px;
+    height: 270px;
   }
   
 }
