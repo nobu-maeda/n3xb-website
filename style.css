@@ -102,6 +102,7 @@ html, body {
   font-weight: 400;
   font-size: 32pt;
   letter-spacing: 0.10ch;
+  margin: 0 5px 5px 5px;
 }
 
 .subtitle h3 {
@@ -126,6 +127,7 @@ html, body {
   font-weight: 400;
   font-size: 16pt;
   letter-spacing: 0.08ch;
+  margin: 10px 10px 0 10px;
 }
 
 .bitcoin {
@@ -183,11 +185,6 @@ html, body {
           transform: scale(1.1);
 }
 
-.video-overview iframe {
-  width: 840;
-  height: 472;
-}
-
 .entry-static {
   display: flex;
   flex-direction: row;
@@ -213,6 +210,10 @@ html, body {
   font-weight: 300;
   font-size: 20pt;
   position: relative;
+}
+
+.entry-body p {
+  font-size: 12pt;
 }
 
 .entry-icon img {
@@ -246,18 +247,6 @@ html, body {
     background-attachment: unset;
     background-size: cover;
   }
-}
-
-@media only screen and (max-width: 640px) {
-  .entry-text {
-    margin-right: 50px;
-  }
-  .entry-title {
-    font-size: 16pt;
-  }
-  .entry-body p {
-    font-size: 12pt;
-  }
   .video-overview iframe {
     max-width: 640vw;
     width:640px;
@@ -266,21 +255,21 @@ html, body {
   }
 }
 
-@media only screen and (max-width: 480px) {
-  .subtitle h2 {
-    font-size: 20pt;
+@media only screen and (max-width: 640px) {
+  .timeline {
+    padding: 10px;
   }
-  .section-title h3 {
-    font-size: 15pt;
+  .entry a {
+    margin: 0 0 10px 10px;
   }
   .entry-text {
-    margin-right: 20px;
+    margin-right: 50px;
   }
   .entry-title {
-    font-size: 12pt;
+    font-size: 18pt;
   }
   .entry-body p {
-    font-size: 10pt;
+    font-size: 11pt;
   }
   .video-overview iframe {
     max-width: 480vw;
@@ -288,5 +277,40 @@ html, body {
     max-height: 270vh;
     height:270px;
   }
-  
+}
+
+@media only screen and (max-width: 480px) {
+  .title h2 {
+    font-size: 38pt;
+  }
+  .subtitle h3 {
+    font-size: 20pt;
+  }
+  .subtitle h5 {
+    font-size: 15pt;
+  }
+  .section-title h4 {
+    font-size: 15pt;
+  }
+  .timeline {
+    padding: 0;
+  }
+  .entry a {
+    margin: 0 0 0 0;
+  }
+  .entry-text {
+    margin-right: 20px;
+  }
+  .entry-title {
+    font-size: 14pt;
+  }
+  .entry-body p {
+    font-size: 10pt;
+  }
+  .video-overview iframe {
+    max-width: 375vw;
+    width:375px;
+    max-height: 210vh;
+    height:210px;
+  }
 }
