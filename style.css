@@ -140,8 +140,10 @@ html, body {
 }
 
 .video-overview iframe {
-  width: 840px;
-  height: 472px;
+  max-width: 840vw;
+  width:840px;
+  max-height: 200vh;
+  height:200px;
 }
 
 /* Timeline */
@@ -182,8 +184,8 @@ html, body {
 }
 
 .video-overview iframe {
-  width: 840px;
-  height: 472px;
+  width: 840;
+  height: 472;
 }
 
 .entry-static {
@@ -229,7 +231,7 @@ html, body {
 
 /*--- Footer Text ---*/
 .footer-div {
-  margin-left:20px;
+  margin-left: 20px;
 }
 
 .footer-text {
@@ -257,8 +259,10 @@ html, body {
     font-size: 12pt;
   }
   .video-overview iframe {
-    width: 640px;
-    height: 360px;
+    max-width: 640vw;
+    width:640px;
+    max-height: 360vh;
+    height:360px;
   }
 }
 
@@ -279,8 +283,10 @@ html, body {
     font-size: 10pt;
   }
   .video-overview iframe {
-    width: 480px;
-    height: 270px;
+    max-width: 480vw;
+    width:480px;
+    max-height: 270vh;
+    height:270px;
   }
   
 }
