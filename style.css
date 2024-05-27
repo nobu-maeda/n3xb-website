@@ -142,8 +142,8 @@ html, body {
 .video-overview iframe {
   max-width: 840vw;
   width:840px;
-  max-height: 200vh;
-  height:200px;
+  max-height: 472vh;
+  height:472px;
 }
 
 /* Timeline */
