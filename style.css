@@ -62,7 +62,7 @@ html, body {
   justify-content: center;
 }
 
-/*--- Main Inner ---*/
+/*--- Main Hero ---*/
 .main-inner {
   flex: 0 2 840px;
   align-self: stretch;
@@ -76,42 +76,73 @@ html, body {
 }
 
 /*--- Titles ---*/
-.title h1 {
+.title {
   align-self: left;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+}
+
+.title h1 {
   font-size: 64pt;
   letter-spacing: 0.10ch;
+  line-height: 36px;
 }
 
 .title h1 sup {
-  font-weight: 400;
   font-size: 42pt;
-  letter-spacing: 0.10ch;
+}
+
+.title h1 .acronym {
+  font-size: 16pt;
+  font-weight: 100;
+  letter-spacing: 0.12ch;
+  display: inline-block;
+}
+
+.bitcoin {
+  color: #f7931a;
 }
 
 .title h2 {
-  align-self: left;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
   font-size: 48pt;
   letter-spacing: 0.08ch;
 }
 
 .title h2 sup {
-  font-weight: 400;
   font-size: 32pt;
   letter-spacing: 0.10ch;
   margin: 0 5px 5px 5px;
 }
 
-.subtitle h3 {
+/*--- Subtitles ---*/
+.subtitle {
   text-align: left;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 24pt;
-  letter-spacing: 0.10ch;
 }
+
+.subtitle h3 { /* About / Contribute */
+  font-size: 24pt;
+  letter-spacing: 0.1ch;
+  margin-top: 20px;
+}
+
+.subtitle h4 { /* Index */
+  font-size: 20pt;
+  letter-spacing: 0.1ch;
+  margin: 20px 10px 0 10px;
+}
+
+.subtitle h5 { /* Fatcrab */
+  font-size: 16pt;
+  letter-spacing: 0.08ch;
+  margin: 10px 10px 0 10px;
+}
+
+/*--- Main Expansion ---*/
+
+
+/*--- Section Title ---*/
 
 .section-title h4 {
   text-align: left;
@@ -119,19 +150,6 @@ html, body {
   font-weight: 300;
   font-size: 18pt;
   letter-spacing: 0.08ch;
-}
-
-.subtitle h5 {
-  text-align: left;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 16pt;
-  letter-spacing: 0.08ch;
-  margin: 10px 10px 0 10px;
-}
-
-.bitcoin {
-  color: #f7931a;
 }
 
 /* Youtube */
@@ -148,8 +166,8 @@ html, body {
   height:472px;
 }
 
-/* Timeline */
-.timeline {
+/* Hero Action */
+.hero-action {
   margin: 30px auto;
   padding: 20px;
 }
@@ -160,7 +178,7 @@ html, body {
   flex-direction: row;
   justify-content: space-between;
   position: relative;
-  margin: 0 0 20px 20px;
+  margin: 10px;
   padding: 10px;
   color:#fff;
   background-color: transparent;
@@ -196,7 +214,7 @@ html, body {
   background-color: transparent;
 }
 
-/* Information about the timeline */
+/* Formatting for Hero Actions */
 .entry-text {
   display: flex;
   flex-direction: column;
@@ -207,8 +225,8 @@ html, body {
 /* Title of the entry */
 .entry-title {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-  font-size: 20pt;
+  font-weight: 200;
+  font-size: 18pt;
   position: relative;
 }
 
@@ -224,6 +242,22 @@ html, body {
 /*--- Paragraphs ---*/
 .paragraph {
   padding: 25px 0 30px 0;
+}
+
+.paragraph b {
+  font-size: 15pt;
+  line-height: 50pt;
+}
+
+.paragraph p {
+  font-size: 14pt;
+  padding-bottom: 20px;
+}
+
+.paragraph ul {
+  font-size: 14pt;
+  line-height: 28pt;
+  padding-bottom: 15px;
 }
 
 .paragraph a {
@@ -256,7 +290,14 @@ html, body {
 }
 
 @media only screen and (max-width: 640px) {
-  .timeline {
+  .title h1 .acronym {
+    font-size: 15pt;
+    letter-spacing: 0.08ch;
+  }
+  .subtitle h4 {
+    font-size: 16pt;
+  }
+  .hero-action {
     padding: 10px;
   }
   .entry a {
@@ -266,11 +307,18 @@ html, body {
     margin-right: 50px;
   }
   .entry-title {
-    font-size: 18pt;
+    font-size: 16pt;
   }
   .entry-body p {
     font-size: 11pt;
   }
+    .paragraph b {
+      font-size: 14pt;
+    }
+  
+    .paragraph p {
+      font-size: 14pt;
+    }
   .video-overview iframe {
     max-width: 480vw;
     width:480px;
@@ -280,11 +328,23 @@ html, body {
 }
 
 @media only screen and (max-width: 480px) {
+  .title h1 {
+    font-size: 48pt;
+    letter-spacing: 0.08ch;
+    line-height: 28px;
+  }
+  .title h1 .acronym {
+    font-size: 11pt;
+    letter-spacing: 0.06ch;
+  }
   .title h2 {
     font-size: 38pt;
   }
   .subtitle h3 {
     font-size: 20pt;
+  }
+  .subtitle h4 {
+    font-size: 15pt;
   }
   .subtitle h5 {
     font-size: 15pt;
@@ -292,7 +352,7 @@ html, body {
   .section-title h4 {
     font-size: 15pt;
   }
-  .timeline {
+  .hero-action {
     padding: 0;
   }
   .entry a {
@@ -307,6 +367,12 @@ html, body {
   .entry-body p {
     font-size: 10pt;
   }
+    .paragraph b {
+      font-size: 13pt;
+    }
+        .paragraph p {
+          font-size: 13pt;
+        }
   .video-overview iframe {
     max-width: 375vw;
     width:375px;

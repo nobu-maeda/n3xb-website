@@ -33,19 +33,19 @@
     <meta name="robots" content="follow, index">
 
     <!-- FB Open Graph data -->
-    <meta property="og:title" content="n3xB - naive Nostr no-KYC exchange for Bitcoin">
+    <meta property="og:title" content="n3xB - naive nostr nym exchange for Bitcoin">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://www.n3xb.io/img/Share1200x627.jpg">
     <meta property="og:description" content="Nostr based Layer 2 Protocol for Bitcoin / Fiat Exchange">
     <meta property="og:url" content="https://n3xb.io">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="627">
-    <meta property="og:image:alt" content="n3xB - naive Nostr no-KYC exchange for Bitcoin">
+    <meta property="og:image:alt" content="n3xB - naive Nostr nym exchange for Bitcoin">
     <meta property="og:site_name" content="n3xB">
 
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="n3xB - naive Nostr no-KYC exchange for Bitcoin">
+    <meta name="twitter:title" content="n3xB - naive nostr nym exchange for Bitcoin">
     <meta name="twitter:description" content="Nostr based Layer 2 Protocol for Bitcoin / Fiat Exchange">
     <meta name="twitter:image" content="https://www.n3xb.io/img/Share1200x627.jpg">
     <meta name="twitter:url" content="https://n3xb.io">
@@ -63,16 +63,13 @@
       <div class="collapse navbar-collapse me-3" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item text-end">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item text-end">
-            <a class="nav-link" href="contribute.html">Contribute</a>
-          </li>
-          <li class="nav-item text-end">
-            <a class="nav-link" href="fatcrab.html">Fatcrab</a>
+            <a class="nav-link" href="fatcrab.html">Demo</a>
           </li>
           <li class="nav-item text-end">
             <a class="nav-link" href="https://github.com/nobu-maeda/n3xb">Github</a>
+          </li>
+          <li class="nav-item text-end">
+            <a class="nav-link" href="https://discord.gg/5CFBMF38Nh">Discord</a>
           </li>
           <li class="nav-item text-end">
             <a class="nav-link" href="https://damus.io/npub1w27whyf6860xztr5pqtdn8fywkwj82evemcvktc6cm5dl7vypgkqp9cuc8">Nostr</a>
@@ -85,35 +82,79 @@
     </div>
   </nav>
 
-  <!-- Content -->
+  <!-- Overview -->
   <div class="main">
     <div class="main-inner">
-      <div class="title"><h1>n3xB</h1></div>
-      <div class="subtitle"><h3>naive Nostr no-KYC exchange for <span class="bitcoin">Bitcoin</span></h3></div>
-      
-      <div class="timeline">
+
+      <div class="title"><h1>n3xB<span class="acronym"> | naive nostr nym exchange for <span class="bitcoin">Bitcoin</span></span></h1></div>
+      <div class="subtitle"><h4>A Nostr based orderbook protocol for exchanging between Bitcoin & fiat currencies </h4></div>
+
+      <div class="hero-action">
         <div class="entries">
           <div class="entry"><a href="https://github.com/nobu-maeda/n3xb">
             <div class="entry-text">
-              <div class="entry-title">n3xB Protocol Proposal</div>
-              <div class="entry-body"><p>Draft v0.2. Your feedback would be appreciated!</p></div>
+              <div class="entry-title">See the n3xB protocol proposal</div>
             </div>
-            <div class="entry-icon shadowed"><img class="thumb-image" src="img/GitHubIcon.png"></div>
+            <div class="entry-icon shadowed"><img class="thumb-image" src="img/ProtocolIcon-160.png"></div>
           </a></div>
           <div class="entry"><a href="https://github.com/nobu-maeda/crusty-n3xb">
             <div class="entry-text">
-              <div class="entry-title">Crusty-n3xB Protocol Library</div>
-              <div class="entry-body"><p>🆕 First working draft completed in a compilable library form!</p></div>
+              <div class="entry-title">Get started with n3xB protocol Rust library</div>
             </div>
             <div class="entry-icon"><img class="thumb-image" src="img/GitHubIcon.png"></div>
           </a></div>
           <div class="entry"><a href="fatcrab.html">
             <div class="entry-text">
-              <div class="entry-title">OceanSea App & Fatcrab Trade Engine</div>
-              <div class="entry-body"><p>🆕 A working example built with Swift on top of the n3xB protocol. Click to get the demo macOS app and see the video demos!</p></div>
+              <div class="entry-title">Try the OceanSea demo implementation</div>
             </div>
             <div class="entry-icon"><img class="thumb-image" src="img/OceanSeaIcon-160.png"></div>
           </a></div>
+        </div>
+      </div>
+    
+      <div class="main-expand">
+        <!-- What is n3xB? -->
+        <div class="subtitle"><h3>What is n3xB?</h3></div>
+        <div class="paragraph">
+          <p>n3xB is a layer 2 open protocol built on-top of Nostr. It is designed to create a common standard for orders 
+            looking to exchange between Bitcoin and fiat currencies. Enabling a globally shared orderbook with deep liquidity 
+            as the basis of a network of interoperable decentralized exchange applications.
+          <p><a href="https://github.com/nobu-maeda/n3xb/blob/master/specs/architecture/architecture.md">Click here to see the architecture that n3xB is built on</a></p>
+        </div>
+
+        <!-- Why n3xB? -->
+        <div class="subtitle"><h3>Why n3xB and not...</h3></div>
+        <div class="paragraph">
+        <div class="subtitle"><b>centralized exchanges like Binance?</b></div>
+          <p>Bitcoin has remained a very trustless system for over a decade. Same cannot be 
+            said for the exchanges that trade Bitcoin for fiat currencies. Trust in centralized entities are still largely 
+            needed to exchange between Bitcoin and fiat. This trust have seen to be repeatedly broken either through negligence, 
+            malevolence or regulatory capture. The ramps to go into and off of Bitcoin needs to be as trustless as Bitcoin 
+            itself in order to realize the full potential of Bitcoin as a trustless replacement of the existing financial system.
+
+          <div class="subtitle"><b>Bisq, Robosat, Peach, Hodlhodl, etc?</b></div>
+          <p>These are all great projects trying to solve the exchange. However, they all have one or more of the following weaknesses:
+          <ul>
+            <li>Proprietary orderbook, order formats, leading to shallow liquidity pools
+            <li>Poor user experiences, especially on mobile devices
+            <li>Many still contains centralized points of failure, including temporary custodial trust
+          </ul>
+
+          <div class="subtitle"><b>n3xB is a protocol first approach</b></div>
+          <p>n3xB is different in that it is not yet another exchange software solution, but an open protocol for a globally shared 
+            orderbook. This enables developers to build different exchange experiences atop of a common liquidity pool. With Nostr 
+            as the architectural foundation, n3xB aims to enable mobile friendly user experiences without sacrificing
+            decentralization and trustlessness properties that is essential to Bitcoin.
+        </div>
+
+        <!-- Let's get started! -->
+        <div class="subtitle"><h3>Ways to get started</h3></div>
+        <div class="paragraph">
+          <p><a href="https://github.com/nobu-maeda/n3xb">▶︎ See the n3xB protocol proposal</a></p>
+          <p><a href="https://github.com/nobu-maeda/n3xb/blob/master/specs/architecture/architecture.md">▶︎ Learn more on how the n3xB architecture works</a></p>
+          <p><a href="https://github.com/nobu-maeda/crusty-n3xb">▶︎ Start developing using the Rust based n3xB protocol library</a></p>
+          <p><a href="fatcrab.html">▶︎ Try the example demo app built using the n3xB protocol</a></p>
+          <p><a href="https://discord.gg/5CFBMF38Nh">▶︎ Ask questions, give feedback, and join in the conversation</a></p>
         </div>
       </div>
     </div>
