@@ -234,6 +234,7 @@ html, body {
 }
 
 .paragraph b {
+  font-weight: 400;
   font-size: 15pt;
   line-height: 50pt;
 }
@@ -356,12 +357,12 @@ html, body {
   .entry-body p {
     font-size: 10pt;
   }
-    .paragraph b {
-      font-size: 13pt;
-    }
-        .paragraph p {
-          font-size: 13pt;
-        }
+  .paragraph b {
+    font-size: 11pt;
+  }
+  .paragraph p {
+    font-size: 13pt;
+  }
   .video-overview iframe {
     max-width: 375vw;
     width:375px;
